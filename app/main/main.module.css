@@ -1,0 +1,80 @@
+.goods {
+    background-color: #181818;
+    width: 70vw;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column; /* Добавляем вертикальную ориентацию */
+    height: auto;
+    padding: 20px; /* Добавляем внутренние отступы */
+    border-radius: 10px; /* Закругляем края */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Добавляем тень */
+}
+
+.grid {
+    width: 100%; /* Устанавливаем ширину сетки на 100% */
+    display: grid; /* Используем CSS Grid для более удобного расположения */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Колонки адаптивного размера */
+    gap: 20px; /* Расстояние между элементами сетки */
+    margin: 20px 0; /* Отступ сверху и снизу */
+}
+
+.grid-item {
+    background-color: #292929; /* Фоновый цвет элемента сетки */
+    border-radius: 10px; /* Закругление углов */
+    padding: 15px; /* Внутренние отступы */
+    display: flex;
+    flex-direction: column; /* Вертикальное выравнивание */
+    justify-content: space-between; /* Распределение пространства между элементами */
+    transition: transform 0.3s; /* Плавный переход при наведении */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Тень для элемента */
+}
+
+.grid-item:hover {
+    transform: scale(1.02); /* Увеличение элемента при наведении */
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column; /* Вертикальное выравнивание текста */
+    justify-content: center; /* Центрируем текст по вертикали */
+}
+
+.description h1 {
+    font-size: 24px; /* Уменьшаем размер заголовка */
+    margin: 0; /* Убираем отступы */
+    color: #ffffff; /* Цвет текста */
+}
+
+.description p {
+    font-size: 16px; /* Уменьшаем размер текста */
+    color: #b0b0b0; /* Светло-серый цвет текста */
+    margin: 5px 0; /* Добавляем небольшой отступ между параграфами */
+}
+
+.option {
+    padding: 20px;
+    text-align: center; /* Центрируем кнопки */
+}
+
+.option button {
+    background-color: #444444; /* Цвет фона кнопки */
+    color: #ffffff; /* Цвет текста кнопки */
+    border: none; /* Убираем границу */
+    padding: 10px 20px; /* Внутренние отступы */
+    border-radius: 5px; /* Закругляем углы кнопки */
+    cursor: pointer; /* Указываем, что это кнопка */
+    transition: background-color 0.3s; /* Плавный переход цвета фона */
+}
+
+.option button:hover {
+    background-color: #666666; /* Цвет фона кнопки при наведении */
+}
+.option input{
+    height: 40px;
+    margin: 0 10px;
+    border: 10px;
+    color: black;
+}
